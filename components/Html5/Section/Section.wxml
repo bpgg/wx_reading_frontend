@@ -1,0 +1,4 @@
+<!--components/Html5/Section/Section.wxml-->
+<view class="section s-class">
+  <slot></slot>
+</view>

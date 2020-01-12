@@ -1,0 +1,26 @@
+/* components/Cell/Cell.wxss */
+.cell {
+  width: 100%;
+  min-height: 20px;
+  box-sizing: border-box;
+  padding: 10rpx 20rpx;
+  font-size: 30rpx;
+  /* margin: 2rpx 0; */
+}
+
+.cell + .cell {
+  /* margin: 2rpx 0; */
+  /* padding: 0 20rpx; */
+}
+
+.cell-inline {
+  border-style: solid;
+  border-color: #f5f7fa;
+  border-width: 0 0 1px 0;
+  padding: 0 0 20rpx 0;
+}
+
+.cell-inline-border-hidden {
+  border-width: 0 !important;
+  padding: 0;
+}

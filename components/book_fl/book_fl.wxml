@@ -1,0 +1,16 @@
+<!--components/book_fl/book_fl.wxml-->
+<view class="classify-item">
+  <view class="classify-item-left">
+      <view class="title">{{book_fl.title}}</view>
+      <view class="content">
+        <block wx:for="{{book_fl.data}}" wx:key="*this">
+          <view >
+            {{index+1}}. {{item}}
+          </view>
+        </block>
+      </view>
+  </view>
+  <view class="classify-item-right">
+      <image src="{{book_fl.img}}"></image>
+  </view>
+</view>

@@ -1,0 +1,20 @@
+<!--pages/login/login.wxml-->
+<view class='discover-container'>
+  <block wx:for="{{discoverList}}">
+    <view class='discover-item'>
+      <view class="img">
+        <image src="{{item.img}}"></image>
+      </view>
+      <view class="slogan">
+        <view>{{item.slogan}}</view>
+         
+        <view style="text-align:right;padding-top:20rpx"> —— {{item.author}}</view>
+      </view>
+    </view>
+  </block>
+</view>
+<view class="bottom">
+  <van-button size="large" type="info" open-type="getUserInfo" bindgetuserinfo="bindGetUserInfo">授权登录</van-button>
+</view>
+
+<!-- <button class="log-btn" open-type="getUserInfo" bindgetuserinfo="bindGetUserInfo">授权登录</button> -->

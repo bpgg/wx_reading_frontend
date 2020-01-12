@@ -1,0 +1,5 @@
+<view class="cell cell-out-class">
+  <view class="cell-inline cell-class {{hiddenBorder ? 'cell-inline-border-hidden' : ''}}">
+    <slot></slot>
+  </view>
+</view>

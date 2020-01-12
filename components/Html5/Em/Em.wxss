@@ -1,0 +1,4 @@
+/* components/Html5/Em/Em.wxss */
+.em {
+  font-style: italic
+}

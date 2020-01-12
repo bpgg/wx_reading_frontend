@@ -1,0 +1,4 @@
+<!--components/Html5/H3/H3.wxml-->
+<text class="h3 h-class">
+  <slot></slot>
+</text>

@@ -1,0 +1,30 @@
+<!--otherpages/stroy_details/story_details.wxml-->
+<view class="story-details">
+  <view class="title"><van-tag type="danger" size="large" round >{{story.story_tag}}</van-tag><text decode="true">&emsp;</text>{{story.story_name}}</view>
+  <view class="resource"> {{story.story_source}} {{story.story_date}}</view>
+  <view class="content-box">
+    <view class="cover-img">
+      <image src="{{story.story_coverImg}}"></image>
+    </view>
+    <view class="content">
+      <block wx:for="{{story.paragraphs}}" wx:key="*this">
+        <view class="paragraph"> <text decode="{{true}}">&emsp;&emsp;{{item}}</text></view>
+      </block>
+      <!-- {{story.story_content}} -->
+    </view>
+  </view>
+</view>
+<view class="line"></view>
+
+<!-- <view class="comment-box">
+  <view class="tag">评论</view>
+</view>
+<view class="line"></view>
+
+<view class="relate-content">
+  <view class="tag">相关阅读</view>
+  <story-item bind:toStoryDetail="toStoryDetail" story_id="222"></story-item>
+  <story-item></story-item>
+  <story-item></story-item>
+  <story-item></story-item>
+</view> -->

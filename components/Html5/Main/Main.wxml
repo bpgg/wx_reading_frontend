@@ -1,0 +1,4 @@
+<!--components/Html5/Main/Main.wxml-->
+<view class="main m-class">
+  <slot></slot>
+</view>

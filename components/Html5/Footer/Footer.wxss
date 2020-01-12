@@ -1,0 +1,5 @@
+/* components/Html5/Footer/Footer.wxss */
+view.footer{
+  display: inline-block;
+  width: 100%;
+}

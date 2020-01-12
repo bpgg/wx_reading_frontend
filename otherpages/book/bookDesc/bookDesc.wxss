@@ -1,0 +1,70 @@
+page{
+  background-color: #f1f1f1;
+}
+
+.bookDesc-container{
+  width: 100%;
+  box-sizing: border-box;
+  padding:5vw;
+}
+.bookDesc-container .top-box,.bookDesc-container .bottom-box{
+  width: 100%;
+  height: calc(50vh - 5vw) ;
+  /* background-color:#f5deb3; */
+  background-color: rgb(25, 137, 250);
+  padding: 5vw 0;
+  box-sizing: border-box;
+  border-radius: 30rpx 30rpx 0 0;
+  text-align: center;
+  box-shadow: 0 0 15rpx #ccc;
+}
+.bookDesc-container .bottom-box{
+  border-radius: 0 0 30rpx 30rpx;
+  background-color: white;
+  padding: 5vw;
+
+}
+.top-box image{
+  /* position: absolute; */
+  width: 30vw;
+  height: 45vw;
+  box-shadow: 0 0 10rpx #ccc;
+}
+.top-box .book-name{
+  font-size: 40rpx;
+  font-weight: bold;
+  padding: 20rpx 0;
+  color: #ddd;
+  letter-spacing: 4rpx;
+}
+.top-box .author{
+  color: #ccc;
+  font-size: 28rpx;
+  letter-spacing: 2rpx;
+}
+.bottom-box .grade-box{
+  width: 100%;
+  height: 15vw;
+}
+.bottom-box .book-intro{
+  margin-bottom: 30rpx;
+}
+.bottom-box .book-intro .content{
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 6;
+  overflow: hidden;
+  width: 100%;
+  height: 36vw;
+  line-height: 6vw;
+  font-size: 26rpx;
+  color:#666;
+  position: relative;
+  letter-spacing: 3rpx;
+}
+.book-intro .title{
+  text-align:left;
+  padding:20rpx 0;
+  font-weight: bold;
+  font-size: 40rpx;
+}

@@ -1,0 +1,8 @@
+{
+  "usingComponents": {
+    "top-search": "../../components/top_search/top_search",
+    "top-nav-page":"../../components/TopNavPage/TopNavPage",
+    "book-tj":"../../components/book_tj/book_tj",
+    "book-fl":"../../components/book_fl/book_fl"
+  }
+}

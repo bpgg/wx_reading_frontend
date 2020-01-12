@@ -1,0 +1,12 @@
+<!--components/stoy_item/story_item.wxml-->
+<view class="story-item" bindtap="storyDetail">
+  <view class="left-box">
+    <view class="title"><van-tag type="danger">{{story.story_tag}}</van-tag> {{story.story_name}}</view>
+    <view class="resource">{{story.story_source}}</view>
+  </view>
+  <view class="right-box">
+    <image src="{{story.story_coverImg}}"></image>
+
+  </view>
+</view>
+<view class="line"></view>

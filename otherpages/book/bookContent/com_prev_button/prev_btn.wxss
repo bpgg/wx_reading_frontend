@@ -1,0 +1,24 @@
+/* otherpages/book/bookContent/com_prev_button/prev_btn.wxss */
+.prev-btn{
+  color: rgb(25, 137, 250);
+  position: relative;
+  width: 140rpx;
+  height: 60rpx;
+  line-height: 60rpx;
+  font-size: 32rpx;
+  padding-left:40rpx; 
+}
+.prev-btn::before,.prev-btn::after{
+  content: '';
+  position: absolute;
+  background-color: rgb(25, 137, 250);
+  width: 20rpx;
+  height: 2rpx;
+  transform: rotate(45deg);
+  left: 10rpx;
+  top: 38rpx;
+}
+.prev-btn::after{
+  transform: rotate(-45deg);
+  top: 26rpx;  
+}

@@ -1,0 +1,5 @@
+/* components/Html5/Section/Section.wxss */
+view.section {
+  display: inline-block;
+  width: 50%;
+}

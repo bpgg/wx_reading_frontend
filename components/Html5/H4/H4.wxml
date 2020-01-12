@@ -1,0 +1,7 @@
+<!--components/Html5/H4/H4.wxml-->
+<text class="h4 h-class">
+  <block wx:if="{{data!==''}}">
+    {{data}}
+  </block>
+  <slot></slot>
+</text>

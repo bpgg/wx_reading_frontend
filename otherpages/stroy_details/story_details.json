@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "story-item":"../../components/story_item/story_item",
+    "van-tag":"../../miniprogram_npm/vant-weapp/tag"
+  }
+}

@@ -1,0 +1,12 @@
+<!--components/book_tj/book_tj.wxml-->
+<view class="recommend-item" bindtap='bookDetail'>
+   <view class="recommend-item-left">
+       <image src="{{book_tj.book_coverImage}}"></image>
+   </view>
+   <view class="recommend-item-right">
+       <view class="recommend-item-title">{{book_tj.book_name}}</view>
+       <view class="recommend-item-author">{{book_tj.author}}</view>
+       <view class="recommend-item-tip">{{book_tj.book_tip}}</view>
+   </view>
+</view>
+

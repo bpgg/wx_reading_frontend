@@ -1,0 +1,86 @@
+/* otherpages/book/bookContent/com_tools/com_tools.wxss */
+/* components/com_reading_tool/com_reading_tool.wxss */
+.tool-box{
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  overflow: hidden;
+  height: 110rpx;
+  box-sizing: border-box;
+  padding:  5rpx 30rpx 0 30rpx;
+  background-color: white;
+  border-top: 2rpx solid #999;
+  display: flex;
+  justify-content: space-between;
+  color: #777;
+  font-size: 24rpx;
+  align-items: center;
+
+}
+.tool-box .catalog,.tool-box .listen,.tool-box .setting{
+  width: 60rpx;
+  height: 100%;
+  position: relative;
+}
+/* fixed 才能显示。relative不能显示 */
+.catalog .catalog-list,.setting .setting-box{
+  position: fixed;
+  bottom: 110rpx;
+  left: 0;
+  width: 100vw;
+  height: 70vh;
+  background-color: white;
+  border-top: 2rpx solid #ccc;
+}
+.setting .setting-box{
+  height: 30vh;
+}
+
+.tool-box image{
+  width: 50rpx;
+  height: 50rpx;
+}
+.tool-box .add-book{
+  width: 220rpx;
+  height: 70rpx;
+  box-sizing: border-box;
+  padding-left: 60rpx;
+  background-color: rgb(41, 82, 185);
+  border-radius: 40rpx;
+  color: white;
+  font-size: 30rpx;
+  line-height: 70rpx;
+  text-align: center;
+  position: relative;
+}
+.tool-box .remove-book{
+   width: 220rpx;
+  height: 70rpx;
+  box-sizing: border-box;
+  padding-left: 60rpx;
+  background-color:#d1d1d1;
+  border-radius: 40rpx;
+  color: #444;
+  font-size: 30rpx;
+  line-height: 70rpx;
+  text-align: center;
+  position: relative;
+}
+
+.tool-box .add-book image,.tool-box .remove-book image{
+  width: 40rpx;
+  height: 40rpx;
+  position: absolute;
+  left: 20rpx;
+  top: 14rpx;
+}
+.chapter-list-mask{
+  /* position: absolute; */
+  position: fixed;
+  bottom: 110rpx;
+  background: rgba(0, 0, 0, .7);
+  left: 0rpx;
+  width: 100%;
+  height: calc(100vh - 110rpx);
+  overflow: auto;
+}

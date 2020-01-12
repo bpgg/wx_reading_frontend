@@ -1,0 +1,18 @@
+<view class="bookDesc-container">
+  <view class="top-box"> 
+    <image src="../../../assets/coverImg/default-coverImg.png"></image>
+    <!-- <image src="{{book_coverImg}}"></image> -->
+    <view class="book-name">{{book_name}}</view>
+    <view class="author"> {{author}}</view>
+      
+  
+  </view>
+  <view class="bottom-box">
+    <view class="book-intro">
+      <view class="title">简介</view>
+      <view class="content" bindtap="showIntroDialog">{{book_introduction}}</view>
+    </view>
+    <van-button type="info" bindtap="toBookContent">开始阅读</van-button>
+    <van-dialog id="van-dialog" />
+  </view>
+</view>

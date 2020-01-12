@@ -1,0 +1,6 @@
+<template name="TopSearch">
+  <view class="search-box" >
+  <image src="../../assets/search.png"></image>
+  <input type="text" placeholder="{{placeholder}}"></input>
+</view>
+</template>

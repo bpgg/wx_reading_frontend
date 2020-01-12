@@ -1,0 +1,15 @@
+/* otherpages/user/edit/edit.wxss */
+.edit-container{
+  width: 100%;
+  box-sizing: border-box;
+  padding: 0 5%;
+}
+.top-title{
+  text-align: center;
+  color:  rgb(25, 137, 250);
+  font-size: 40rpx;
+  height: 100rpx;
+  line-height: 100rpx;
+  letter-spacing: 10rpx;
+  font-weight: 800;
+}

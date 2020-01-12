@@ -1,0 +1,24 @@
+/* components/book/book.wxss */
+.book-container{
+  width: 180rpx;
+  height: 350rpx;
+}
+
+.book-container image{
+  width: 100%;
+  height: 70%;
+  box-shadow: 0 0 10rpx #999;
+  overflow: hidden;
+}
+.book-container .book-name{
+  width: 100%;
+  height: 30%;
+  line-height: 50rpx;
+  box-sizing: border-box;
+  font-size: 28rpx;
+  -webkit-line-clamp:2;
+  display: -webkit-box; 
+  -webkit-box-orient:vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}

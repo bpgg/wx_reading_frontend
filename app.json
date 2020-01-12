@@ -1,0 +1,55 @@
+{
+  "pages": [
+    "pages/login/login",
+    "pages/index/index",
+    "pages/bookshelf/bookshelf",
+    "pages/story/story",
+    "pages/user/user",
+    "otherpages/book/bookDesc/bookDesc",
+    "otherpages/stroy_details/story_details",
+    "otherpages/book/bookContent/bookContent",
+    "otherpages/user/edit/edit",
+    "otherpages/user/personal/personal",
+    "otherpages/search/search_page/search_page"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#139eeb",
+    "navigationBarTitleText": "来读书吧",
+    "navigationBarTextStyle": "white"
+  },
+  "tabBar": {
+    "color": "#515151",
+    "borderStyle": "white",
+    "backgroundColor": "#fff",
+    "selectedColor": "#028FFA",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "发现",
+        "iconPath": "./assets/tabBar/discover.png",
+        "selectedIconPath": "./assets/tabBar/discover2.png"
+      },
+      {
+        "pagePath": "pages/bookshelf/bookshelf",
+        "text": "书架",
+        "iconPath": "./assets/tabBar/store.png",
+        "selectedIconPath": "./assets/tabBar/store2.png"
+      },
+      {
+        "pagePath": "pages/story/story",
+        "text": "故事",
+        "iconPath": "./assets/tabBar/story.png",
+        "selectedIconPath": "./assets/tabBar/story2.png"
+      },
+      {
+        "pagePath": "pages/user/user",
+        "text": "我",
+        "iconPath": "./assets/tabBar/user.png",
+        "selectedIconPath": "./assets/tabBar/user2.png"
+      }
+    ]
+  },
+  "usingComponents": {},
+  "sitemapLocation": "sitemap.json"
+}

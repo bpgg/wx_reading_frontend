@@ -1,0 +1,10 @@
+<!--components/user_list_item/list_item.wxml-->
+<view class="list-item">
+  <view class="list-item-left">
+      <van-icon name="{{icon_name}}" />
+      <text style="padding-left:30rpx;letter-spacing:2rpx">{{list_item_name}}</text>
+  </view>
+  <view class="list-item-right">
+    <slot></slot>
+  </view>
+</view>

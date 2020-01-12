@@ -1,0 +1,5 @@
+/* components/Html5/H3/H3.wxss */
+.h3 {
+  font-size: 20px  !important;
+  font-weight: 900
+}

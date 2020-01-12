@@ -1,0 +1,5 @@
+/* components/Html5/Article/Article.wxss */
+view.article {
+  width: 100%;
+  display: inline-block
+}

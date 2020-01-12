@@ -1,0 +1,7 @@
+<!--components/Html5/P/P.wxml-->
+<text class="p p-class">
+<block wx:if="{{data!==''}}">
+{{data}}
+</block>
+  <slot></slot>
+</text>

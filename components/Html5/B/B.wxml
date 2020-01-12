@@ -1,0 +1,4 @@
+<!--components/Html5/B/B.wxml-->
+<text class="b b-class">
+  <slot></slot>
+</text>

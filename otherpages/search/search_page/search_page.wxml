@@ -1,0 +1,2 @@
+<!--otherpages/search/search_page/search_page.wxml-->
+<top-search bind:searchBook="searchBook"  placeholder="输入你想搜索的书籍..."></top-search>

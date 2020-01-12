@@ -1,0 +1,5 @@
+/* components/Html5/H6/H6.wxss */
+.h6 {
+  font-size: 14px !important;
+  font-weight: 900
+}

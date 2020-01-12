@@ -1,0 +1,5 @@
+/* components/Html5/Aside/Aside.wxss */
+view.aside {
+  display: inline-block;
+  width: 100%;
+}

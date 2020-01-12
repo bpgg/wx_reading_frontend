@@ -1,0 +1,98 @@
+/* otherpages/book/bookContent/bookContent.wxss */
+/* @import './com_tools/com_tools.wxss'; */
+.content-container{
+  width: 100%;
+  box-sizing: border-box;
+  padding: 5% 5% 150rpx;
+  font-size: 36rpx;
+  line-height: 60rpx;
+}
+.chapter .chapter-id{
+  font-size: 48rpx;
+  font-weight: bold;
+  padding-bottom:30rpx; 
+}
+.chapter .chapter-name{
+  font-weight: bold;
+  font-size: 36rpx;
+  padding-bottom: 20rpx;
+}
+.paragraph{
+  padding-bottom: 40rpx;
+}
+.text-msg{
+  padding: 20rpx 0;
+  text-align: center;
+  font-size: 30rpx;
+  color: #ccc;
+}
+.chapter-list-box{
+  position: absolute;
+  width: 100%;
+  height: 70vh;
+  left: 0;
+  bottom: 0;
+  background: white;
+  box-sizing: border-box;
+  border-top: 2rpx solid #ccc;
+  overflow: auto;
+}
+.chapterList-title,.setting-title{
+  width: 100%;
+  font-size: 35rpx;
+  letter-spacing: 4rpx;
+  text-align: center;
+  height: 120rpx;
+  line-height: 120rpx;
+  font-weight: 600;
+}
+.setting-box{
+  width: 100%;
+  height: calc(30vh - 120rpx);
+  overflow: hidden;
+}
+.setting-box .text-box{
+  display: flex;
+  justify-content: space-between;
+  font-size: 30rpx;
+  height: 60rpx;
+  line-height: 60rpx;
+  box-sizing: border-box;
+  padding: 0 5%;
+}
+.setting-box .progross-box{
+  width: 100%;
+  box-sizing: border-box;
+  padding: 40rpx 5% 40rpx;
+  position: relative;
+}
+.center-y{
+  /* position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 0; */
+}
+.progross-box .slide-block{
+  width: 60rpx;
+  height: 40rpx;
+  background-color: teal;
+  position: absolute;
+  left: 0;
+  top:50%;
+  transform: translateY(-50%);
+}
+.chapter-list-item-box{
+  width: 100%;
+  height: calc(70vh - 125rpx);
+  overflow: auto;
+}
+.chapter-list-item{
+  width: 100%;
+  padding: 0 5%;
+  box-sizing: border-box;
+  height: 100rpx;
+  line-height: 100rpx;
+  font-size: 40rpx;
+  /* border-color: #ccc; */
+  border-bottom: 2rpx solid #ccc;
+}

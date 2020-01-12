@@ -1,0 +1,41 @@
+<!--otherpages/book/bookContent/bookContent.wxml-->
+<view class="content-container">
+  <prev-btn bindtap="toPrevChapter"></prev-btn>
+  <view class="chapter">
+    <view class="chapter-id">第{{current_content_id}}章</view>
+    <view class="chapter-name">{{current_chapter_name}}</view>
+    <view class="chapater-content">
+       <block wx:for="{{current_paragraphs}}" wx:key="{{index}}">
+           <view class="paragraph" style="font-size:{{fontSize}}">
+              <text decode="{{true}}">&emsp;&emsp;{{item}}</text>
+           </view>
+      </block>
+    </view>
+  </view>
+
+  <van-button type="info" size="large" bindtap="toNextChapter" plain hairline wx:if="{{chapterList_len>current_content_id}}">下一章</van-button>
+  <view wx:else class="text-msg">恭喜您读完本书~</view>
+  <van-dialog id="van-dialog" />
+</view>
+<bottom-tools>
+  <view slot="chapterList">
+    <view class="chapterList-title">目录</view>
+    <view class="chapter-list-item-box">
+       <block wx:for="{{chapterList}}">
+      <view class="chapter-list-item" wx:key="*this" data-index="{{item.chapter_contentID}}" bindtap="toChapter">第{{item.chapter_contentID}}章<text decode="{{true}}">&emsp;</text>{{item.chapter_name}}</view>
+    </block>
+    </view> 
+  </view>
+  <view slot="setting">
+    <view class="setting-title">设置</view>
+    <view class="setting-box">
+      <view class="text-box">
+        <text>26rpx</text><text style="font-size:40rpx;font-weight:600">36rpx</text><text>46rpx</text>
+      </view>
+      <view class="progross-box">
+        <progress percent="{{font_percent}}" color="pink" stroke-width="12" class="center-y" bindtap="setFontSize"></progress>
+        <!-- <view class="slide-block"></view> -->
+      </view>
+    </view>
+  </view>
+</bottom-tools>

@@ -1,0 +1,4 @@
+<!--otherpages/book/bookContent/com_prev_button/prev_btn.wxml-->
+<view class="prev-btn">
+  <text>{{btn_msg}}</text>
+</view>

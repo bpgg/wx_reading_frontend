@@ -1,0 +1,4 @@
+/* components/Html5/B/B.wxss */
+text.b {
+  font-weight: 900 !important
+}

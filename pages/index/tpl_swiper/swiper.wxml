@@ -1,0 +1,11 @@
+<template name="swiper">
+  <view class='carousel'> 
+    <swiper class='carousel_swiper' indicator-dots="true" indicator-color="#f4f4f4" indicator-active-color="#139eeb" autoplay="true" interval='2000' circular='true'>
+      <block wx:for="{{swiperConfig.item}}" wx:key="key">
+        <swiper-item bindtap='chomeCarouselClick'>
+          <image class="carouselImg" src='{{item}}' mode='aspectFill' ></image>
+        </swiper-item>
+      </block>
+    </swiper>
+ </view>
+</template>

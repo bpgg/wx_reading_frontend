@@ -1,0 +1,8 @@
+<!--components/Html5/A/A.wxml-->
+<text wx:if="{{text}}" class="a a-class" catchtap="jumpTap">
+  <slot></slot>
+</text>
+
+<view wx:if="{{block}}" class="a a-class" catchtap="jumpTap">
+  <slot></slot>
+</view>

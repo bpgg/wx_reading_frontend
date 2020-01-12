@@ -1,0 +1,7 @@
+{
+  "usingComponents": {
+    "van-button":"../../../miniprogram_npm/vant-weapp/button",
+    "prev-btn":"./com_prev_button/prev_btn",
+    "bottom-tools":"./com_tools/com_tools"
+  }
+}

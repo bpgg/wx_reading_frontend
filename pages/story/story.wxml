@@ -1,0 +1,15 @@
+<!--pages/story/story.wxml-->
+<view>
+    <top-search placeholder="{{placeholder}}"></top-search>
+    <van-notice-bar  text="有时候，并不是时间过得太快，而是事情做的太少。是你的懒惰让时间没了存在感，时间自然也会让你没了存在感。"
+  left-icon="volume-o"></van-notice-bar>
+    <view class="story-box">
+      <block wx:for="{{storyList}}">
+        <story-item
+          story="{{item}}"
+          bind:toStoryDetail="toStoryDetail"
+        ></story-item>
+      </block>
+     
+    </view>
+</view>

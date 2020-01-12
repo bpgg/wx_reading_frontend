@@ -1,0 +1,8 @@
+{
+  "usingComponents": {
+    "top-search": "../../components/top_search/top_search",
+    "story-item":"../../components/story_item/story_item",
+    "van-notice-bar":"../../miniprogram_npm/vant-weapp/notice-bar"
+    
+  }
+}

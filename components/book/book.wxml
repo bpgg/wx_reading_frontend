@@ -1,0 +1,7 @@
+<!--components/book/book.wxml-->
+<view class='book-container' bindtap='bookDetail'>
+  <image src="{{book_coverImg}}"></image>
+  <view class='book-name'>
+    {{book_name}}
+  </view>
+</view>

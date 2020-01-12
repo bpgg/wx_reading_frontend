@@ -1,0 +1,4 @@
+<!--components/Html5/H6/H6.wxml-->
+<text class="h6 h-class">
+  <slot></slot>
+</text>

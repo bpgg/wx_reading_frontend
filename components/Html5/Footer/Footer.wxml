@@ -1,0 +1,4 @@
+<!--components/Html5/Footer/Footer.wxml-->
+<view class="footer f-class">
+  <slot></slot>
+</view>

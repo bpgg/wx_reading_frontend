@@ -1,0 +1,5 @@
+/* components/Html5/Main/Main.wxss */
+view.main {
+  display: inline-block;
+  width: 100%;
+}

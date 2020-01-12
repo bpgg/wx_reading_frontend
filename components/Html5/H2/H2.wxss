@@ -1,0 +1,5 @@
+/* components/Html5/H2/H2.wxss */
+.h2 {
+  font-size: 22px !important;
+  font-weight: 900
+}

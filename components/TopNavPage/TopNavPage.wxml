@@ -1,0 +1,38 @@
+<!--components/TopNavPage/TopNavPage.wxml-->
+<view class="top-navbar-page"  bindtouchstart="touchstart" bindtouchend="touchend" bindtouchmove='touchMove'>
+  <view class="navbar">
+    <text
+      wx:for="{{navItem}}"
+      wx:key="*this"
+      data-index="{{index}}"
+      class="navbar-item {{index===activeItem? 'active' : ''}}"
+      catchtap="eNavItem">{{item.name}}</text>
+  </view>
+  <view class="page-content">
+    <view
+      wx:if="{{activeItem===0}}"
+      class="{{scrollerDirection===1? 'scrollerRig':'scrollerLeft'}}">
+      <slot name="1"></slot>
+    </view>
+    <view
+    wx:if="{{activeItem===1}}"
+    class="{{scrollerDirection===1? 'scrollerRig':'scrollerLeft'}}">
+      <slot name="2" ></slot>
+    </view>
+    <view
+    wx:if="{{activeItem===2}}"
+    class="{{scrollerDirection===1? 'scrollerRig':'scrollerLeft'}}">
+      <slot name="3" ></slot>
+    </view>
+    <view
+    wx:if="{{activeItem===3}}"
+    class="{{scrollerDirection===1? 'scrollerRig':'scrollerLeft'}}">
+      <slot name="4" ></slot>
+    </view>
+    <view
+    wx:if="{{activeItem===4}}"
+    class="{{scrollerDirection===1? 'scrollerRig':'scrollerLeft'}}">
+      <slot name="5" ></slot>
+    </view>
+  </view>
+</view>

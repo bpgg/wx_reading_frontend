@@ -1,0 +1,4 @@
+<!--components/Html5/Aside/Aside.wxml-->
+<view class="aside a-class">
+  <slot></slot>
+</view>

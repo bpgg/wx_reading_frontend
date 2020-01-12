@@ -1,0 +1,7 @@
+{
+    "usingComponents": {
+      "top-search": "../../components/top_search/top_search",
+      "book": "../../components/book/book",
+      "van-button":"../../miniprogram_npm/vant-weapp/button"
+    }
+}

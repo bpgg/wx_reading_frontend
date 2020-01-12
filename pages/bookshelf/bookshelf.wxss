@@ -1,0 +1,17 @@
+/* pages/bookshelf/bookshelf.wxss */
+.bookshelf-container{
+  width: 100%;
+  /* box-sizing: border-box; */
+  box-sizing: border-box;
+  padding: 4vw;
+  /* display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around; */
+
+  display: grid;
+  /**指定重复元素的宽度*/
+  grid-template-columns: repeat(auto-fill, 30vw); 
+  justify-content: space-between;
+  grid-gap: 1vw;
+
+}

@@ -1,0 +1,10 @@
+<!--pages/bookshelf/bookshelf.wxml-->
+<view>
+    <top-search placeholder="搜索书架"></top-search>
+    <view class='bookshelf-container'>
+      <block wx:for="{{storeList}}">
+       <book book_name="{{item.book_name}}" data-book_id="{{item.book_id}}" book_id="{{item.book_id}}" bind:toBookDetail="toBookDetail"></book>
+      </block>
+      <book book_name="" book_coverImg="../../assets/coverImg/book-add.png"></book>
+    </view>
+</view>

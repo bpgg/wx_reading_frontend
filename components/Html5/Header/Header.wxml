@@ -1,0 +1,4 @@
+<!--components/Html5/Header/Header.wxml-->
+<view class="header h-class">
+  <slot></slot>
+</view>

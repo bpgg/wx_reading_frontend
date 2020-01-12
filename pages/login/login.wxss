@@ -1,0 +1,56 @@
+/* pages/login/login.wxss */
+.discover-container{
+  width: 100%;
+  box-sizing: border-box;
+  padding: 0 10rpx;
+  white-space: nowrap;
+  overflow-x: scroll;
+  margin-top: 5vh;
+}
+.discover-item{
+  display: inline-block;
+  width: 80vw;
+  min-height: 80vh;
+  background-color: #139eeb;
+  margin: 0 15rpx;
+  position: relative;
+  border-radius: 40rpx;
+  overflow: hidden;
+  box-shadow: 0 0 10rpx #ccc;
+  box-sizing: border-box;
+  padding-top: 12vh;
+}
+.discover-item .img{
+  width: 40vw;
+  height: 40vh;
+  margin:  0 auto;
+}
+.discover-item .img image{
+  width: 100%;
+  height: 100%;
+}
+.discover-item .slogan{
+  width: 100%;
+  padding: 10% 5% 5%;
+  box-sizing: border-box;
+  text-align: center;
+  font-size: 32rpx;
+  color: #eee;
+  letter-spacing: 5rpx;
+  font-weight: 600;
+  min-height: 20vh;
+  white-space:pre-wrap
+}
+/*  隐藏滚动条 */
+::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+  color: transparent;
+}
+.bottom{
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 2vh 5%;
+}

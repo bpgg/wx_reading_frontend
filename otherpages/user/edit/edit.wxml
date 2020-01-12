@@ -1,0 +1,28 @@
+<!--otherpages/user/edit/edit.wxml-->
+<view class="edit-container">
+  <view class="top-title">编辑个人信息</view>
+  <van-cell-group>
+    <van-field
+      value="输入框已禁用"
+      label="用户名"
+      left-icon="contact"
+      disabled
+    />
+    <van-field
+      value="{{user_sign}}"
+      rows="3"
+      label="个性签名"
+      type="textarea"
+      maxlength="50"
+      placeholder="请输入个性签名"
+      show-word-limit
+    />
+  </van-cell-group>
+  <!-- <van-area
+    area-list="{{areaList}}"
+    :columns-placeholder="['请选择', '请选择', '请选择']"
+    title="选择地区"
+    confirm="confirm_"
+  /> -->
+  <van-button type="info" size="large" style="margin-top:20rpx">保存</van-button>
+</view>

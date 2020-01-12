@@ -1,0 +1,10 @@
+{
+  "component": true,
+  "usingComponents": {
+    "cell": "../../components/Cell/Cell",
+    "van-dialog":"../../miniprogram_npm/vant-weapp/dialog"
+  },
+  "navigationBarTitleText": "个人中心",
+  "navigationBarBackgroundColor": "#139eeb",
+  "navigationBarTextStyle": "white"
+}

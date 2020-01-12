@@ -1,0 +1,5 @@
+<!--components/top_search/top_search.wxml-->
+<view class="search-box" style='background-color:{{backgroundColor}}'>
+  <image src="../../assets/search.png"></image>
+  <input type="text" placeholder="{{placeholder}}" bindtap="toSearchPage"></input>
+</view>

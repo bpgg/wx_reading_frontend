@@ -1,0 +1,5 @@
+<template name="range">
+  <view >
+      TOP 200 /
+  </view>
+</template>

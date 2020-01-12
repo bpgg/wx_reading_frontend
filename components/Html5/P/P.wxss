@@ -1,0 +1,6 @@
+/* components/Html5/P/P.wxss */
+text.p {
+  display: block;
+  line-height: 1.5;
+  font-size: 14px;
+}

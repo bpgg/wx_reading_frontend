@@ -1,0 +1,47 @@
+<import src="./tpl_swiper/swiper.wxml"/>
+<import src="../../templates/TopSearch/TopSearch.wxml"/>
+<view>
+  <!-- <template
+      is="TopSearch"
+      data="{{placeholder}}"
+      bindtap:""
+  >
+  </template> -->
+    <view class="search-box" >
+      <image src="../../assets/search.png"></image>
+      <input type="text" placeholder="{{placeholder}}" bindtap="toSearchPage"></input>
+    </view>
+    <!-- <top-search placeholder="输入你想搜索的书籍..." bind:toSearchPage="toSearchPage"></top-search> -->
+    <template
+      is="swiper"
+      data="{{swiperConfig}}">
+    </template>
+    <top-nav-page navItem="{{navItem}}">
+      <view slot="1" class="book-tj-box">
+        <block wx:for="{{tj_books}}" :key="*this">
+             <book-tj book_tj="{{item}}" bind:toBookDetail="toBookDetail"></book-tj>
+        </block>
+  
+       
+       
+      </view>
+      <view slot="2">
+        <book-fl></book-fl>
+        <book-fl></book-fl>
+        <book-fl></book-fl>
+      </view>
+      <view slot="3">
+        
+      </view>
+      <view slot="4">4444</view>
+      <view slot="5">5555</view>
+    </top-nav-page>
+    <!--  增加一个scroll-x -->
+    <!-- <view class='discover-container'>
+      <block>
+        <view class='discover-item'></view>
+         <view class='discover-item'></view>
+          <view class='discover-item'></view>
+      </block>
+    </view> -->
+</view>

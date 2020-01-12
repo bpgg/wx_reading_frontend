@@ -1,0 +1,4 @@
+<!--components/Html5/Em/Em.wxml-->
+<text class="em em-class">
+  <slot></slot>
+</text>

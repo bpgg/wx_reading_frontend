@@ -1,0 +1,42 @@
+<!--pages/user/user.wxml-->
+<!-- <view class="user-container">
+  <view class="user-msg">
+    <view class="user-avator"><image src="../../assets/coverImg/default-coverImg.png"></image></view>
+    <view class="user-name">{{username}}</view>
+    <view class="user-edit" bindtap="toEditPage">编辑个人资料</view>
+  </view>
+  <view class="line"></view>
+  <view class="account-box">
+    <list-item>
+      <view>5.00</view>
+    </list-item>
+     <list-item list_item_name="无限卡-免费试用">
+      <view>还剩18天</view>
+    </list-item>
+  </view>
+   <view class="line"></view>
+</view> -->
+<view class="personal-wrapper">
+  <view class="header">
+    <view class="user-portrait">
+      <image src="{{userInfo.avatarUrl}}"></image>
+    </view>
+    <view class="user-info">
+      <view>{{userInfo.nickName}}</view>
+     <view>{{userInfo.city}}</view>
+     
+    </view>
+  </view>
+  <view class="content-list">
+    <view class="content-list-item" bindtap="toBookshelf">
+      <view class="list-item-left" >我的书架</view>
+       <view class="list-item-right"></view>
+    </view>
+    <view class="content-list-item">
+      <view class="list-item-left">我的信息</view>
+       <view class="list-item-right"></view>
+    </view>
+    <view class="content-list-item text-center" bindtap="logout">退出</view>
+  </view>
+</view>
+<van-dialog id="van-dialog" />

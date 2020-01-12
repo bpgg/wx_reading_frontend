@@ -1,0 +1,30 @@
+<!--otherpages/book/bookContent/com_tools/com_tools.wxml-->
+<view class="tool-box">
+  <view class="catalog" bindtap="showCatalog"> 
+    <image src="../../../../assets/bottomTools/catalog.png" ></image>
+  目录 
+    <view class="catalog-list" style="display:{{isShowCatalog}}">
+      <slot name="chapterList"></slot>
+    </view>
+  </view>
+  <view class="setting" >
+     <image src="../../../../assets/bottomTools/setting.png" bindtap="showSetting"></image>
+  设置
+    <view class="setting-box" style="display:{{isShowSetting}}">
+      <slot name="setting"></slot>
+    </view>
+  </view>
+  <view class="add-book" bindtap="addBook" wx:if="{{!hasAdd}}">
+    <image src="../../../../assets/bottomTools/book1.png"></image>
+  加入书架</view>
+  <view class="remove-book" bindtap="removeBook" wx:else >
+    <image src="../../../../assets/bottomTools/book.png"></image>
+     已加入书架
+  </view>
+  <van-dialog id="van-dialog" />
+
+  <!-- <view class="chapter-list-mask">
+    <slot name="1"></slot>
+    <slot name="chapterList"></slot>
+  </view> -->
+</view>

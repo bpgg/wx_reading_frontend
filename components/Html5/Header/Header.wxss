@@ -1,0 +1,5 @@
+/* components/Html5/Header/Header.wxss */
+view.header {
+  display: inline-block;
+  width: 100%;
+}
